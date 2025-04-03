@@ -905,11 +905,11 @@ function setLanguage(lang) {
     });
     
     // Update direction for Amharic
-   // if (lang === 'am') {
-     //   document.documentElement.dir = 'rtl';
-  //  } else {
-   //     document.documentElement.dir = 'ltr';
- //   }
+    if (lang === 'am') {
+        document.documentElement.dir = 'ltl';
+    } else {
+        document.documentElement.dir = 'ltr';
+   }
     
     localStorage.setItem('language', lang);
 }
